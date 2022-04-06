@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+#container {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fddee3;
+}
+
+#btn {
+  display: flex;
+  align-items: center;
+  font: 2.5rem "Comic Sans MS", "Comic Sans", "Marker Felt", serif;
+  color: #792773;
+  cursor: pointer;
+  padding: 0.4rem 1.5rem;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#btn img {
+  padding-right: 0.5rem;
+  width: 3.5rem;
+}
+
+img {
+  width: 17rem;
+  user-select: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#__cornify_count {
+  bottom: 0.9rem !important;
+  font-size: 3.1rem !important;
+  color: #792773 !important;
+  text-transform: none !important;
+}
+
+::selection {
+  background-color: #792773;
+  color: #fddee3;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 7px;
+  }
+}
