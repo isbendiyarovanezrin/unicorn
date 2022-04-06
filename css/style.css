@@ -1,3 +1,12 @@
+:root {
+  --bg-color: #f9c1f8;
+  --btn-bg-color: #fedafe;
+  --btn-hover-color: #f1c3f0;
+  --text-color: #792773;
+  --border-color: #cc1fc0;
+  --font-family: "Comic Sans MS", "Comic Sans", "Marker Felt", serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,20 +24,26 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fddee3;
+  background-color: var(--bg-color);
 }
 
 #btn {
   display: flex;
   align-items: center;
-  font: 2.5rem "Comic Sans MS", "Comic Sans", "Marker Felt", serif;
-  color: #792773;
-  border-color: #cc1fc0;
+  font: 2.5rem var(--font-family);
+  color: var(--text-color);
+  background-color: var(--btn-bg-color);
+  border-color: var(--border-color);
   border-radius: 0.5rem;
   cursor: pointer;
   padding: 0.4rem 1.5rem;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+}
+
+#btn:hover {
+  transition: 0.4s ease;
+  background-color: var(--btn-hover-color);
 }
 
 #btn img {
@@ -45,13 +60,13 @@ img {
 #__cornify_count {
   bottom: 0.9rem !important;
   font-size: 3.1rem !important;
-  color: #792773 !important;
+  color: var(--text-color) !important;
   text-transform: none !important;
 }
 
 ::selection {
-  background-color: #792773;
-  color: #fddee3;
+  background-color: var(--text-color);
+  color: var(--bg-color);
 }
 
 @media screen and (max-width: 900px) {
