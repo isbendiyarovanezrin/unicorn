@@ -73,16 +73,28 @@ img {
   html {
     font-size: 9px;
   }
+
+  img {
+    width: 20rem;
+  }
 }
 
 @media screen and (max-width: 700px) {
   html {
     font-size: 8px;
   }
+
+  img {
+    width: 18rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
   html {
     font-size: 7px;
+  }
+
+  img {
+    width: 15rem;
   }
 }
