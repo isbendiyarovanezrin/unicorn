@@ -1,15 +1,8 @@
-:root {
-  --bg-color: #f9c1f8;
-  --btn-bg-color: #fedafe;
-  --btn-hover-color: #f1c3f0;
-  --text-color: #792773;
-  --border-color: #cc1fc0;
-  --font-family: "Comic Sans MS", "Comic Sans", "Marker Felt", serif;
-}
-
 * {
   margin: 0;
   padding: 0;
+  border: none;
+  outline: none;
   box-sizing: border-box;
 }
 
@@ -17,33 +10,48 @@ html {
   font-size: 10px;
 }
 
-#container {
+body {
   overflow: hidden;
+  background-image: linear-gradient(217deg, #ff00b3cc, #ff000000 70.71%),
+    linear-gradient(127deg, #42c442cc, #00ff0000 70.71%),
+    linear-gradient(336deg, #00aeffcc, #0000ff00 70.71%);
+}
+
+#container {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-color);
 }
 
 #btn {
+  z-index: 1000000;
   display: flex;
   align-items: center;
-  font: 2.5rem var(--font-family);
-  color: var(--text-color);
-  background-color: var(--btn-bg-color);
-  border-color: var(--border-color);
-  border-radius: 0.5rem;
-  cursor: pointer;
+  color: #881280;
+  border-radius: 1rem;
   padding: 0.4rem 1.5rem;
+  cursor: pointer;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+  background-image: linear-gradient(217deg, #ff00b3cc, #ff000000 70.71%),
+    linear-gradient(127deg, #42c442cc, #00ff0000 70.71%),
+    linear-gradient(336deg, #00aeffcc, #0000ff00 70.71%);
+  box-shadow: #6f50e2 0 0 0 0.3rem, #1dc21a 0 0 0 0.6rem, #ffd913 0 0 0 0.9rem,
+    #ff9c55 0 0 0 1.2rem, #ff5555 0 0 0 1.5rem;
+  font: 2.7rem "Comic Sans MS", "Comic Sans", "Marker Felt", serif;
 }
 
 #btn:hover {
-  transition: 0.4s ease;
-  background-color: var(--btn-hover-color);
+  background-image: linear-gradient(217deg, #00aeffcc, #ff000000 70.71%),
+    linear-gradient(127deg, #42c442cc, #00ff0000 70.71%),
+    linear-gradient(336deg, #ff00b3cc, #0000ff00 70.71%);
+}
+
+#btn:active {
+  box-shadow: #866ddf 0 0 0 0.3rem, #53cf50 0 0 0 0.6rem, #cfba51 0 0 0 0.9rem,
+    #da925f 0 0 0 1.2rem, #d85b5b 0 0 0 1.5rem;
 }
 
 #btn img {
@@ -60,13 +68,14 @@ img {
 #__cornify_count {
   bottom: 0.9rem !important;
   font-size: 3.1rem !important;
-  color: var(--text-color) !important;
+  color: #881280 !important;
   text-transform: none !important;
+  text-shadow: 0 0 0.6rem #ff12b8cc;
 }
 
 ::selection {
-  background-color: var(--text-color);
-  color: var(--bg-color);
+  background-color: #881280;
+  color: #fddee3;
 }
 
 @media screen and (max-width: 900px) {
