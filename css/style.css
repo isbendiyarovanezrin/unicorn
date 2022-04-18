@@ -68,9 +68,12 @@ img {
 #__cornify_count {
   bottom: 0.9rem !important;
   font-size: 3.1rem !important;
-  color: #881280 !important;
   text-transform: none !important;
-  text-shadow: 0 0 0.6rem #ff12b8cc;
+  background-image: url("../img/color.gif");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 ::selection {
